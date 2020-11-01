@@ -6,4 +6,4 @@ before-install:
     - docker build -t emailzunk/docker-react-dev -f Dockerfile.dev .
 
 script:
-    - docker run emailzunk/docker-react npm run test -- -- coverage
+    - docker run emailzunk/docker-react-dev npm run test -- -- coverage
